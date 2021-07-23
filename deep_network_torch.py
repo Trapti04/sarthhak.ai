@@ -36,8 +36,11 @@ def createDataloaders(training_data, test_data, BATCH_SIZE = 64 ):
         break
     return train_dataloader, test_dataloader
 
-def main():
-    if __name__ == "__main__":
-        training_data, test_data = download_data()
-        train_dataloader, test_dataloader = createDataloaders(training_data, test_data, BATCH_SIZE = 64 )
+#def main():
+print("The value of __name__ is:", repr(__name__)) # this lets us know what is the name of the context of the file, module or class.
+
+if __name__ == "__main__":
+    print("executing deep_network_torch.py")
+    training_data, test_data = download_data()
+    train_dataloader, test_dataloader = createDataloaders(training_data, test_data, BATCH_SIZE = 64 )
 
